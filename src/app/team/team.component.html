@@ -1,0 +1,18 @@
+<div class="outerdiv">
+    <div class="cards">
+        <div class="aa" *ngFor="let item of teamData;let i=index">
+            <img src="{{images[i]}}" alt="" [ngClass]="{greenClass:
+                i==isWinner}" />
+            <p>{{item.Name}}</p>
+            <p>{{i}}</p>
+            <p *ngIf="">Winner</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

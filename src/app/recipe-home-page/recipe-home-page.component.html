@@ -1,0 +1,94 @@
+<div class="head">
+    <div class="searchbox">
+
+        <img src="../../assets/Icon feather-search.png" alt="searchicon" class="searchicon" />
+        <span>Search Your Favourite Recipe...</span>
+    </div>
+    <div class="title">
+        <p style="margin: 0 0 -20px 112px ;">category</p>
+        <h2>Pizza & Noodles</h2>
+    </div>
+
+
+
+
+
+    <div>
+        <div class="cards">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SELECT</th>
+                        <th>PLAYER NAME </th>
+                        <th>LEVEL </th>
+                        <th>AVTAR</th>
+                        <th>BET</th>
+                        <th>WINS</th>
+                        <th>LOST</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+
+                <tbody cellpadding="0" cellspacing="0" *ngFor="let item of
+                    image; let i=index">
+                    <tr class="border">
+                        <td> <input id="check" (change)="check(item,$event)" type="checkbox" class="checkbox"></td>
+                        <td>{{item.Name}}</td>
+                        <td>5</td>
+                        <td><img class="pimage" src="{{ii[i]}}" alt="pic"></td>
+                        <td>{{item.Bet}}</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>{{item.Price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="sidebar">
+            <div *ngFor="let ss of s1">
+                {{ss.Name}}-{{ss.wins}}
+
+            </div>
+            <button (click)="pp()">START</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="menu_img" *ngFor="let item of image">
+    <div>
+        <p>{{item.id}}</p>
+        <div>
+            <div class="like-tap">
+                <img [style.background-color]="color" src="../../assets/heart.svg" alt="like" class="heart" />
+            </div>
+            <a (click)="click()"> <img class="ii" src="{{item.Image}}" alt="pic"> </a>
+            <p class="gname">{{item.name}}</p>
+        </div>
+    </div>
+</div> -->
