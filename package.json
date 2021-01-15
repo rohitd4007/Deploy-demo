@@ -8,9 +8,9 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "heroku-postbuild": "ng build --prod"
+        "heroku-postbuild": "ng build --aot -prod"
     },
-    "private": true,
+    "private": false,
     "dependencies": {
         "@angular/animations": "~9.1.11",
         "@angular/cli": "~9.1.8",
